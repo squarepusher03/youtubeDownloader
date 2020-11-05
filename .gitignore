@@ -1,0 +1,6 @@
+youtubeDownloader/build
+youtubeDownloader/dist
+youtubeDownloader/*.spec
+venv/
+.idea
+__pycache__
