@@ -54,7 +54,7 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-All you need is a youtube video link that isn't shortened!
+All you need is a youtube video link that isn't shortened! <br />(i.e. https://www.youtube.com/watch?v=QyJZzq0v7Z4 instead of https://youtu.be/QyJZzq0v7Z4)
 
 ### Prerequisites
 
