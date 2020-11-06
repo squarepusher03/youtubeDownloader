@@ -1,8 +1,7 @@
 import os
-from tkinter import Tk, Label, Entry, Button, ttk
+from tkinter import Tk, Label, Entry, Button, ttk, PhotoImage
 
 import youtubeDownloader.gui.get_widgets as gw
-
 from youtubeDownloader.downloader.downloader_w_gui import Downloader
 
 
@@ -44,14 +43,14 @@ def on_closing() -> None:
     :return: None
     """
 
-    directory = "./youtubeDownloader/downloads"
+    directory = "./downloads"
     files = os.listdir(directory)
     for file in files:
         if file.endswith(".mp4") or file.endswith(".webm") \
                 or file.endswith(".3gpp"):
             os.remove(os.path.join(directory, file))
-    if len(os.listdir("./youtubeDownloader/tmp")) != 0:
-        os.remove("./youtubeDownloader/tmp/tmp.jpg")
+    if len(os.listdir("../youtubeDownloader/tmp")) != 0:
+        os.remove("../youtubeDownloader/tmp/tmp.jpg")
     root.destroy()
 
 
@@ -60,17 +59,21 @@ root.title("Youtube Video Downloader")
 root.geometry("520x400")
 root.resizable(width=False, height=False)
 
+logo = PhotoImage(file='../youtubeDownloader/imgs/logo.png')
+root.iconphoto(False, logo)
+
 address_label = Label(root, text="Video address:")
 address_entry = Entry(root)
 
 quality_label = Label(root, text="Resolution:")
 quality_combobox = ttk.Combobox(
-    root, values=["144p", "240p", "360p", "480p", "720p", "1080p"], state="readonly"
-)
+    root, values=["144p", "240p", "360p", "480p", "720p", "1080p"],
+    state="readonly")
 quality_combobox.current(4)
 
 filetype_label = Label(root, text="Filetype:")
-filetype_combobox = ttk.Combobox(root, values=["mp4", "webm", "3gpp"], state="readonly")
+filetype_combobox = ttk.Combobox(root, values=["mp4", "webm", "3gpp"],
+                                 state="readonly")
 filetype_combobox.current(0)
 
 submit_button = Button(root, text="Submit", command=intialize_downloader)

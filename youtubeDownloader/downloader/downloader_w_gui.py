@@ -40,7 +40,8 @@ class Downloader:
             res=self.quality, file_extension=self.extension
         ).first()
         if not stream:
-            stream = self.yt.streams.filter(res="360p", file_extension="mp4").first()
+            stream = self.yt.streams.filter(res="360p", file_extension="mp4")\
+                .first()
         return stream
 
     def start_download(self):

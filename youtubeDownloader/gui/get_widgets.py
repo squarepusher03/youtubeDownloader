@@ -15,10 +15,12 @@ def get_thumbnail(root: Tk, dl: Downloader) -> None:
     :return: None
     """
 
-    urllib.request.urlretrieve(dl.thumbnail, "./youtubeDownloader/tmp/tmp.jpg")
+    urllib.request.urlretrieve(dl.thumbnail,
+                               "../youtubeDownloader/tmp"
+                               "/tmp.jpg")
 
-    image = Image.open("./youtubeDownloader/tmp/tmp.jpg").resize(
-        (160, 90), Image.ANTIALIAS)
+    image = Image.open("../youtubeDownloader/tmp/tmp.jpg")\
+        .resize((160, 90), Image.ANTIALIAS)
     photo = ImageTk.PhotoImage(image)
 
     thumbnail = Label(root, image=photo)
@@ -84,7 +86,7 @@ def get_length(root: Tk, dl: Downloader) -> None:
     length = Label(
         root,
         text="%02d:%02d:%02d"
-        % (dl.length // 60 // 60, dl.length // 60, dl.length % 60),
+             % (dl.length // 60 // 60, dl.length // 60, dl.length % 60),
     )
 
     length_label.place(x=200, y=180)
