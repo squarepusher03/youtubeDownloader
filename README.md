@@ -6,10 +6,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors](https://img.shields.io/github/contributors/squarepusher03/youtubeDownloader)]()
-[![Forks](https://img.shields.io/github/forks/squarepusher03/youtubeDownloader)]()
-[![Stargazers](https://img.shields.io/github/stars/squarepusher03/youtubeDownloader)]()
-[![Pulls](https://img.shields.io/github/issues-pr/squarepusher03/youtubeDownloader)](https://github.com/squarepusher03/youtubeDownloader/pulls)
 [![MIT License](https://img.shields.io/pypi/l/mi)](https://github.com/squarepusher03/youtubeDownloader/blob/main/LICENSE)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555)](https://linkedin.com/in/graham-hornecker)
 
