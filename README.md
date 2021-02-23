@@ -17,7 +17,7 @@
 <p align="center">
   <img src="https://github.com/squarepusher03/youtubeDownloader/blob/master/youtubeDownloader/imgs/logo.png?raw=true" height=10% width=10%/>
 
-  <h3 align="center">Youtube Downloader</h3>
+  <h3 align="center">Youtube Downloader (WIP)</h3>
 
   <p align="center">
     <strong>Youtube Downloader</strong> is a youtube video downloader 
