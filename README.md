@@ -54,9 +54,19 @@ All you need is a youtube video link that isn't shortened! <br />(i.e. https://w
 
 ### Prerequisites
 
-* [Python 3.8.5](https://www.python.org/downloads/release/python-385/)
-* The [Tkinter](https://tkdocs.com/tutorial/install.html) library
-* The [pytube](https://pypi.org/project/pytube/) library
+* [Python 3.8.5](https://www.python.org/downloads/release/python-385/):
+If Python is not yet installed or if the version installed on your machine is not recent enough, you can download it from [official site](https://www.python.org/downloads/release/python-385/) and follow the installation instructions specific to your operating system.
+* The [Tkinter](https://tkdocs.com/tutorial/install.html) library:
+Enter the following command:
+```sh
+python -m tkinter
+```
+If the command opens a new window without any errors, Tkinter is correctly installed. In general, it is pre-installed with Python.
+* The [pytube](https://pypi.org/project/pytube/) library:
+```sh
+pip install pytube
+```
+Make sure to follow these steps and install the necessary libraries before proceeding with running the project.
 
 ### Installation
 
@@ -64,8 +74,7 @@ All you need is a youtube video link that isn't shortened! <br />(i.e. https://w
 ```sh
 git clone https://github.com/squarepusher03/youtubeDownloader.git
 ```
-2. Install Python
-3. Install tkinter and pytube with pip.
+2. Install Python and the dependencies as described above.
 
 The `app.exe` executable should be in the `dist` folder. 
 If you don't want to use it from that folder, just use a shortcut. 
